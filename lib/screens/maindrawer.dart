@@ -73,6 +73,16 @@ class MainDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: Icon(Icons.star),
+            title: Text(
+              'Rate the app',
+              style: TextStyle(fontSize: 20),
+            ),
+            onTap: (){
+              debugPrint("Rate app");
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text(
               'Logout',
