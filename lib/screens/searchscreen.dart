@@ -5,8 +5,7 @@ class DataSearch extends SearchDelegate<String> {
     'C',
     'C++',
     'Python',
-    'HTML',
-    'CSS',
+    'HTML/CSS',
     'Java',
     'JavaScript',
     'Dart',
@@ -16,7 +15,7 @@ class DataSearch extends SearchDelegate<String> {
     'Ruby',
     'Kotlin'
   ];
-  final recent = ['HTML', 'CSS', 'JavaScript', 'Dart', 'React js'];
+  final recent = ['HTML/CSS', 'JavaScript', 'Dart', 'React js'];
 
   @override
   List<Widget> buildActions(BuildContext context) {

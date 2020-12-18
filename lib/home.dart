@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutterapp/screens/maindrawer.dart';
 import 'package:flutterapp/screens/searchscreen.dart';
 
@@ -27,6 +28,13 @@ class _homePageState extends State<HomePage> {
             'Learn',
             style: TextStyle(fontSize: 40, fontFamily: 'Signatra'),
           ),
+          actions: [
+            IconButton(icon: Icon(Icons.search),
+            onPressed: (){
+              showSearch(
+                  context: context, delegate: DataSearch());
+            },)
+          ],
         ),
         drawer: MainDrawer(),
         body: Container(
@@ -69,67 +77,11 @@ class _homePageState extends State<HomePage> {
               SizedBox(
                 height: 10,
               ),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                          width: MediaQuery.of(context).size.width * 0.4,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [],
-                          ))
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                  padding: EdgeInsets.all(20.0),
-                  child: Align(
-                    heightFactor: 5,
-                    alignment: Alignment.bottomCenter,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        IconButton(
-                          onPressed: () {
-                            showSearch(
-                                context: context, delegate: DataSearch());
-                          },
-                          icon: Icon(
-                            Icons.search,
-                            color: Colors.blueAccent,
-                            size: 40,
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {
-                            debugPrint("Subscription button clicked");
-                          },
-                          icon: Icon(
-                            Icons.subscriptions,
-                            color: Colors.blueAccent,
-                            size: 40,
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () {
-                            debugPrint("Discuss button clicked");
-                          },
-                          icon: Icon(
-                            Icons.mode_comment,
-                            color: Colors.blueAccent,
-                            size: 40,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ))
             ],
           ),
         ));
   }
 }
+
 
 
