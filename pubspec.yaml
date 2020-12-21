@@ -48,13 +48,15 @@ flutter:
   assets:
     - assets/images/profile_image.png
     - assets/images/C++.png
-    - assets/images/Clanguage.png
     - assets/images/html.png
     - assets/images/css.png
-    - assets/images/java.png
+    - assets/images/java1.png
     - assets/images/javascript.png
     - assets/images/python.jpg
     - assets/images/C.png
+    - assets/images/dart.jpg
+    - assets/images/reactjs.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
