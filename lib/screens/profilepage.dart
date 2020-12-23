@@ -4,23 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
-  Widget textfield({@required String text}) {
-    return Material(
-      elevation: 4,
-      shadowColor: Colors.grey,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      child: TextField(
-        decoration: InputDecoration(
-            hintText: text,
-            hintStyle:
-                TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide.none,
-            )),
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
