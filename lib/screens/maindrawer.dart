@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/screens/profilepage.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -29,17 +30,10 @@ class MainDrawer extends StatelessWidget {
                       child: Text(
                         'Name ',
                         style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Signatra',
-                            fontSize: 30),
-                      )),
-                  Text(
-                    'mailid@gmail.com',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Signatra',
+                            color: Colors.white, fontFamily: 'Andika',
                         fontSize: 20),
-                  )
+                      )),
+
                 ],
               ))),
           ListTile(
@@ -48,8 +42,9 @@ class MainDrawer extends StatelessWidget {
               'Profile',
               style: TextStyle(fontSize: 20),
             ),
-            onTap: (){
-              debugPrint("Profile");
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => Profile()));
             },
           ),
           ListTile(
@@ -58,7 +53,7 @@ class MainDrawer extends StatelessWidget {
               'Settings',
               style: TextStyle(fontSize: 20),
             ),
-            onTap: (){
+            onTap: () {
               debugPrint("Settings");
             },
           ),
@@ -68,18 +63,8 @@ class MainDrawer extends StatelessWidget {
               'Invite Friends',
               style: TextStyle(fontSize: 20),
             ),
-            onTap: (){
+            onTap: () {
               debugPrint("Invite friends");
-            },
-          ),
-          ListTile(
-            leading: Icon(Icons.star),
-            title: Text(
-              'Rate the app',
-              style: TextStyle(fontSize: 20),
-            ),
-            onTap: (){
-              debugPrint("Rate app");
             },
           ),
           ListTile(
@@ -88,7 +73,7 @@ class MainDrawer extends StatelessWidget {
               'Logout',
               style: TextStyle(fontSize: 20),
             ),
-            onTap: (){
+            onTap: () {
               debugPrint("Logout");
             },
           )

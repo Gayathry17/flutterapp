@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class DataSearch extends SearchDelegate<String> {
   final courses = [
     'C',
@@ -12,9 +13,6 @@ class DataSearch extends SearchDelegate<String> {
     'Dart',
     'Flutter',
     'React js',
-    'React native',
-    'Ruby',
-    'Kotlin'
   ];
   final recent = ['HTML','CSS', 'JavaScript', 'Dart', 'React js'];
 
@@ -22,8 +20,10 @@ class DataSearch extends SearchDelegate<String> {
   List<Widget> buildActions(BuildContext context) {
     return [
       IconButton(
-        icon: Icon(Icons.search),
-        onPressed: () { },
+        icon: Icon(Icons.clear),
+        onPressed: () {
+          query = " ";
+        },
       )
     ];
   }
@@ -42,7 +42,9 @@ class DataSearch extends SearchDelegate<String> {
   }
 
   @override
-  Widget buildResults(BuildContext context) {}
+  Widget buildResults(BuildContext context) {
+
+  }
 
   @override
   Widget buildSuggestions(BuildContext context) {
