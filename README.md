@@ -15,6 +15,7 @@ extra courses, reference material  and much more managed in the most efficient a
 
 
 Features we provide:
+
 -Online attendance marking portal
 
 -Regular performance reports so that guardians can track their wards’ progress
@@ -25,8 +26,5 @@ Features we provide:
 
 -Faculty can set time deadlines for the videos to be watched and assignments to be submitted, which if not completed in time, will cut off access to all the recreational apps in the mobile immediately
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 
