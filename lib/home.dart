@@ -27,7 +27,7 @@ class _homePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text(
               'Learn',
-              style: TextStyle(fontSize: 40,fontFamily: 'Signatra'),
+              style: TextStyle(fontSize: 30,fontFamily: 'Montserrat-Regular'),
             ),
           actions: [
             IconButton(
@@ -51,8 +51,8 @@ class _homePageState extends State<HomePage> {
                  "wanna learn today?",
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 60,
-                  fontFamily: 'Signatra'
+                  fontSize: 45,
+                  fontFamily: 'Montserrat-Regular'
                 ),
               ),
               SizedBox(
@@ -72,8 +72,8 @@ class _homePageState extends State<HomePage> {
                 Text(
                   "Courses",
                   style: TextStyle(
-                      fontSize: 40,
-                      color: Colors.pink,fontFamily: 'Signatra'),
+                      fontSize: 30,
+                      color: Colors.pink,fontFamily: 'Montserrat-Regular'),
                 ),
                 Expanded(
                   child: new Container(

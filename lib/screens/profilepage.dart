@@ -21,7 +21,7 @@ class Profile extends StatelessWidget {
                 padding: EdgeInsets.all(20),
                 child: Text(
                   "Profile",
-                  style: TextStyle(fontFamily: 'Signatra', fontSize: 50),
+                  style: TextStyle(fontFamily: 'Montserrat-Regular', fontSize: 45),
                 ),
               ),
             ),
@@ -67,7 +67,7 @@ class Profile extends StatelessWidget {
                     children: [
                       Text(
                         "Courses Enrolled:",
-                        style: TextStyle(fontSize: 30, fontFamily: 'Signatra'),
+                        style: TextStyle(fontSize: 20, fontFamily: 'Montserrat-Regular'),
                       ),
                       SizedBox(
                         height: 15,
@@ -101,7 +101,7 @@ class Profile extends StatelessWidget {
                 children: [
                   Text(
                     "Courses Completed:",
-                    style: TextStyle(fontSize: 30, fontFamily: 'Signatra'),
+                    style: TextStyle(fontSize: 20, fontFamily: 'Montserrat-Regular'),
                   ),
                 ],
               ),
@@ -113,7 +113,7 @@ class Profile extends StatelessWidget {
                 children: [
                   Text(
                     "Grades:",
-                    style: TextStyle(fontSize: 30, fontFamily: 'Signatra'),
+                    style: TextStyle(fontSize: 20, fontFamily: 'Montserrat-Regular.ttf'),
                   )
                 ],
               ),
@@ -124,7 +124,7 @@ class Profile extends StatelessWidget {
                 children: [
                   Text(
                     "Certificates:",
-                    style: TextStyle(fontSize: 30, fontFamily: 'Signatra'),
+                    style: TextStyle(fontSize: 20, fontFamily: 'Montserrat-Regular'),
                   )
                 ],
               ),
